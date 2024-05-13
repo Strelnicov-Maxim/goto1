@@ -1,0 +1,176 @@
+/* Сброс стилей */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f5f5f5;
+}
+
+/* Шапка */
+
+header {
+  background-color: #333;
+  color: #fff;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+
+header .logo {
+  width: 100px;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav ul {
+  display: flex;
+  list-style-type: none;
+}
+
+header nav ul li {
+  margin-right: 15px;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+header nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Основное содержимое */
+
+main {
+  padding-top: 50px;
+}
+
+main .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+main section {
+  margin-bottom: 50px;
+}
+
+main section h1,
+main section h2 {
+  margin-bottom: 15px;
+}
+
+main section p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+main section button {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+main section button:hover {
+  background-color: #444;
+}
+
+main section ul {
+  list-style-type: none;
+}
+
+main section ul li {
+  margin-bottom: 10px;
+}
+
+/* Отзывы */
+
+main section.testimonials {
+  background-color: #f5f5f5;
+  padding: 50px 25px;
+}
+
+main section.testimonials .testimonial {
+  margin-bottom: 25px;
+  padding: 25px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+main section.testimonials .testimonial p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+main section.testimonials .testimonial .author {
+  font-size: 14px;
+  font-weight: bold;
+  text-align: right;
+}
+
+/* Контакты */
+
+main section.contact {
+  background-color: #333;
+  color: #fff;
+  padding: 50px 25px;
+}
+
+main section.contact form {
+  display: flex;
+  flex-direction: column;
+}
+
+main section.contact form input,
+main section.contact form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  der-radius: 5px;
+}
+
+main section.contact form textarea {
+  height: 150px;
+}
+
+main section.contact form button {
+  background-color: #444;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+main section.contact form button:hover {
+  background-color: #555;
+}
+
+/* Подвал */
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 15px;
+}
+
+footer .container {
+  text-align: center;
+}
