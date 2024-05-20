@@ -1,176 +1,276 @@
-/* Сброс стилей */
+/* Адаптация для планшетов и телефонов */
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+@media (max-width: 1024px) {
+  /* Шапка */
+  header {
+    padding: 0 10px;
+  }
+
+  /* Навигация */
+  nav {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 99;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  nav a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #333;
+  }
+
+  nav a:hover {
+    background-color: #f5f5f5;
+  }
+
+  /* Контент */
+  main {
+    padding: 20px 0;
+  }
+
+  #hero {
+    padding: 20px 0;
+  }
+
+  #hero h1 {
+    font-size: 1.8rem;
+  }
+
+  #hero p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
+
+  #hero button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+  }
+
+  #features {
+    padding: 20px 0;
+  }
+
+  #features h2 {
+    font-size: 1.6rem;
+  }
+
+  #features ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  #features li {
+    font-size: 1.2rem;
+  }
+
+  #testimonials {
+    padding: 20px 0;
+  }
+
+  #testimonials h2 {
+    font-size: 1.6rem;
+  }
+
+  .testimonial {
+    padding: 20px;
+    margin: 10px 0;
+    background-color: #f5f5f5;
+  }
+
+  .testimonial p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
+
+  .testimonial .author {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+
+  /* Футер */
+  footer {
+    padding: 20px 0;
+    text-align: center;
+  }
+
+  footer h2 {
+    font-size: 1.8rem;
+  }
+
+  footer p {
+    font-size: 1.2rem;
+  }
 }
+/* Адаптация для телефонов */
+
+@media (max-width: 768px) {
+  /* Навигация */
+  nav ul {
+    gap: 10px;
+  }
+
+  /* Контент */
+  #hero h1 {
+    font-size: 1.6rem;
+  }
+
+  #hero p {
+    font-size: 1.1rem;
+  }
+
+  #features h2 {
+    font-size: 1.4rem;
+  }
+
+  #features li {
+    font-size: 1.1rem;
+  }
+
+  #testimonials h2 {
+    font-size: 1.4rem;
+  }
+
+  .testimonial p {
+    font-size: 1.1rem;
+  }
+
+  .testimonial .author {
+    font-size: 1.1rem;
+  }
+
+  /* Футер */
+  footer p {
+    font-size: 1.1rem;
+  }
+}
+/* Темная тема */
 
 body {
-  font-family: "Roboto", sans-serif;
-  background-color: #f5f5f5;
+  background-color: #404040;
+  color: #fff;
 }
-
-/* Шапка */
 
 header {
+  background-color: #5a5a5a;
+}
+
+nav ul {
   background-color: #333;
+}
+
+nav a {
   color: #fff;
 }
 
-header .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px;
+nav a:hover {
+  background-color: #252525;
 }
 
-header .logo {
-  width: 100px;
-}
-
-header nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-header nav ul {
-  display: flex;
-  list-style-type: none;
-}
-
-header nav ul li {
-  margin-right: 15px;
-}
-
-header nav ul li a {
-  color: #fff;
-  text-decoration: none;
-}
-
-header nav ul li a:hover {
-  text-decoration: underline;
-}
-
-/* Основное содержимое */
-
-main {
-  padding-top: 50px;
-}
-
-main .container {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-main section {
-  margin-bottom: 50px;
-}
-
-main section h1,
-main section h2 {
-  margin-bottom: 15px;
-}
-
-main section p {
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-main section button {
+#hero {
   background-color: #333;
+}
+
+#hero h1 {
+  color: #efd59b;
+}
+
+#hero p {
+  color: #a0a0a0;
+}
+
+#hero button {
+  background-color: #ab8383;
+  color: #333;
+}
+
+#features {
+  background-color: #333;
+}
+
+#features h2 {
+  color: #eacdcd;
+}
+
+#features ul {
+  background-color: #674d4d;
+}
+
+#features li {
   color: #fff;
-  padding: 10px 15px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
 }
 
-main section button:hover {
-  background-color: #444;
+#testimonials {
+  background-color: #333;
 }
 
-main section ul {
-  list-style-type: none;
+#testimonials h2 {
+  color: #fff;
 }
-
-main section ul li {
-  margin-bottom: 10px;
-}
-
-/* Отзывы */
-
-main section.testimonials {
-  background-color: #f5f5f5;
-  padding: 50px 25px;
-}
-
-main section.testimonials .testimonial {
-  margin-bottom: 25px;
-  padding: 25px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-}
-
-main section.testimonials .testimonial p {
-  font-size: 18px;
-  line-height: 1.5;
-}
-
-main section.testimonials .testimonial .author {
-  font-size: 14px;
-  font-weight: bold;
+nav ul {
   text-align: right;
 }
 
-/* Контакты */
-
-main section.contact {
+.testimonial {
   background-color: #333;
+}
+
+.testimonial p {
   color: #fff;
-  padding: 50px 25px;
 }
 
-main section.contact form {
-  display: flex;
-  flex-direction: column;
-}
-
-main section.contact form input,
-main section.contact form textarea {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 15px;
-  border: 1px solid #ddd;
-  der-radius: 5px;
-}
-
-main section.contact form textarea {
-  height: 150px;
-}
-
-main section.contact form button {
-  background-color: #444;
+.testimonial .author {
   color: #fff;
-  padding: 10px 15px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
 }
-
-main section.contact form button:hover {
-  background-color: #555;
-}
-
-/* Подвал */
 
 footer {
   background-color: #333;
-  color: #fff;
-  padding: 15px;
 }
 
-footer .container {
-  text-align: center;
+footer h2 {
+  color: #fff;
+}
+
+footer p {
+  color: #fff;
+}
+#testimonials {
+  padding: 20px 0;
+}
+
+#testimonials h2 {
+  font-size: 1.6rem;
+}
+
+.testimonial {
+  padding: 20px;
+  margin: 10px 0;
+  background-color: #787878;
+}
+
+.testimonial p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.testimonial .author {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 10px;
 }

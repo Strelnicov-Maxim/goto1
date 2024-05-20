@@ -5,8 +5,6 @@ function fn(event) {
   const pass = document.querySelector("pass").value;
   const div = document.querySelector("div");
 
-  login.lenght < 12 && !/^\d$/.test(login);
-
   if (!true) {
     event.preventDefaut();
     div.innerText = "Vedi pravilnoyyy";

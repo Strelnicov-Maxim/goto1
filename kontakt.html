@@ -1,0 +1,71 @@
+<!DOCTYPE html> 
+<html lang="ru"> 
+  <head> 
+    <meta charset="UTF-8" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+    <title>Ваш сайт</title> 
+    <link rel="stylesheet" href="style.css" /> 
+    <link 
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" 
+      rel="stylesheet" 
+    /> 
+    <script src="script.js"></script> 
+  </head> 
+  <body> 
+    <header> 
+      <div class="container"> 
+        <div class="logo"> 
+          <img src="log.png" alt="Логотип" /> 
+        </div> 
+        <div class="sa"> 
+          <nav>  
+            <ul>  
+              <li><a href="1.html">Главная</a></li>  
+              <li><a href="nas.html">О нас</a></li>  
+              <li><a href="ysluga.html">Услуги</a></li>  
+              <li><a href="kontakt.html">Контакты</a></li>  
+              <li><a href="vhod.html">Войти</a></li>  
+            </ul>  
+          </nav>  
+        </div> 
+
+
+   
+      </div> 
+    </header> 
+    <main id="main-content"> <!--  ID для главного контента -->
+      <div class="container"> 
+        <section id="hero"> 
+          <h1>мы</h1> 
+          <p> 
+            Муниципальное автономное учреждение культуры "Центральная городская 
+            библиотека А. Аалто" муниципального образования "Город Выборг" 
+            Выборгского района Ленинградской области Сокращенное название: МАУК 
+            "Библиотека А. Аалто" Указом Президента Российской Федерации от 20 
+            февраля 1995 года № 176 здание библиотеки включено в Перечень 
+            объектов исторического и культурного наследия Федерального 
+            (общероссийского) значения. Учредитель: Муниципальное образование 
+            «Город Выборг» Дата создания: 7 ноября 1944 года. 
+          </p> 
+
+
+
+        <h2>Контакты</h2> 
+<p></p> 
+          Директор: Рогозина Елена Сергеевна 
+        </p><p> 
+          Телефон: 8 (81378) 2 49 37 
+        </p><p> 
+          e-mail: e.rogozina@aaltolibrary.ru 
+        </p> 
+      </div> 
+    </footer> 
+    <script>
+      // Функция для прокрутки к разделу контактов
+      function scrollToContact() {
+        const contactSection = document.getElementById('contact');
+        contactSection.scrollIntoView({ behavior: "smooth", block: "end" });
+      }
+    </script>
+  </body> 
+</html>
